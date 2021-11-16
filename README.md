@@ -7,7 +7,7 @@
 ## 使用方法
 
 ```bash
-docker run --name mirai --restart=always -it -p <主机端口号>:8080 zhaozuohong/mah
+docker run --name mirai --restart=always -it -p <主机端口号>:8080 -e VERIFY_KEY=<mirai-api-http的密钥> zhaozuohong/mah
 ```
 
 连按 `Ctrl-P` `Ctrl-Q`，将容器转为后台运行。可通过 `docker logs mirai` 查看输出，或使用 `docker attach mirai` 再次连接容器。
